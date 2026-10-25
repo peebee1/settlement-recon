@@ -1,0 +1,78 @@
+{
+  "policy": {
+    "tolerance_minor": 1,
+    "date_window_days": 3
+  },
+  "injected": {
+    "expectations": 388,
+    "rows": 423,
+    "matches": 352,
+    "breaks": 60,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "accounted": true,
+    "balances": true,
+    "per_class": [
+      {
+        "kind": "missing_in_settlement",
+        "injected": 12,
+        "detected": 12,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      {
+        "kind": "unknown_in_settlement",
+        "injected": 12,
+        "detected": 12,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      {
+        "kind": "amount_mismatch",
+        "injected": 12,
+        "detected": 12,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      {
+        "kind": "duplicate_settlement",
+        "injected": 12,
+        "detected": 12,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      {
+        "kind": "currency_mismatch",
+        "injected": 12,
+        "detected": 12,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      {
+        "kind": "late_settlement",
+        "injected": 12,
+        "detected": 12,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      }
+    ]
+  },
+  "clean": {
+    "breaks": 0,
+    "break_kinds": {},
+    "flags": {
+      "split_settlement": 24,
+      "amount_tolerance": 14
+    },
+    "balances": true,
+    "accounted": true,
+    "matches": 400
+  }
+}
